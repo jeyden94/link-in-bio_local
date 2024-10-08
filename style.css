@@ -9,6 +9,16 @@ html, body {
     font-size: 21px;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: bold;     /* Bold the text on hover */
+  position: relative;    /* Ensure the link can have positioned pseudo-elements */
+  color: #000;           /* Set default link color (if needed) */
+}
+
 /* ========= Debugging Border ======== */
 
 * {
@@ -43,6 +53,18 @@ main {
 }
 
 /* ========= Classes ======== */
+
+/* Default link style */
+.custom-link {
+  color: black;           /* Default text color */
+  font-weight: normal;    /* Normal text weight */
+  position: relative;     /* Required for positioning pseudo-element */
+  overflow: hidden;       /* Hide overflow for the flash effect */
+  display: inline-block;  /* Allows width and position adjustments */
+  font-size: 22px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 
 .name-row {
   font-size: 26px;
