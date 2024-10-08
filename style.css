@@ -1,0 +1,116 @@
+/* Global Styles */
+
+html, body {
+    margin: 0;
+    height: 100%;
+    background: linear-gradient(45deg, #38323d, #42157d, #7d4d89);
+    /* this font size will effect all elements (other than h1 -> h6) on the page */
+    background-size: cover;
+    font-size: 21px;
+}
+
+/* ========= Typography ======== */
+
+h1 {
+  font-size: 48px;
+  color: white;
+}
+
+h2 {
+  font-size: 36px;
+  color: white;
+}
+
+h3 {
+  font-size: 28px;
+  color: white;
+}
+
+/* ========= Layout ======== */
+
+header {
+  height: 100px;
+}
+
+main {
+  margin: 200px;
+}
+
+/*
+footer {
+
+}
+*/
+
+/*
+
+
+/* ========= Classes ======== */
+
+/* Style for the image container to center the image */
+.image-container {
+  display: flex;
+  justify-content: center; /* Horizontally center the image */
+  align-items: center;     /* Vertically center the image */
+  margin-bottom: 50px;
+}
+
+/* Style for the image to make it a square and then a circle */
+.circle-img {
+  width: 200px;          /* Set the width */
+  height: 200px;         /* Set the height to make it a square */
+  border-radius: 50%;    /* Turn the square into a circle */
+  object-fit: cover;     /* Ensure the image covers the square area */
+  border: 2px solid black;  /* Add a thin black border around the image */
+}
+
+/* ========= Accordion (tied to java.js) ======== */
+
+
+/* Container to hold both image and accordion side by side */
+.container {
+  display: flex;            /* Flexbox layout to avoid overlap */
+  justify-content: center;  /* Centers the content horizontally */
+  align-items: flex-start;  /* Aligns items at the top */
+  gap: 20px;                /* Space between the image and accordion */
+  padding: 20px;            /* Optional padding around the container */
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: #eee;
+    color: #000000;
+    font-size: large;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
+
+  .accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+  }
