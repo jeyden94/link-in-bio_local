@@ -45,9 +45,10 @@ main {
 /* ========= Classes ======== */
 
 .name-row {
-  font-size: 20px;
+  font-size: 26px;
   color: white;
   margin: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /* Style for the image container to center the image */
