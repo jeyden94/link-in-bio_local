@@ -9,6 +9,12 @@ html, body {
     font-size: 21px;
 }
 
+/* ========= Debugging Border ======== */
+
+* {
+  border: 1px red dashed;
+}
+
 /* ========= Typography ======== */
 
 h1 {
@@ -36,16 +42,13 @@ main {
   margin: 200px;
 }
 
-/*
-footer {
-
-}
-*/
-
-/*
-
-
 /* ========= Classes ======== */
+
+.name-row {
+  font-size: 20px;
+  color: white;
+  margin: 20px;
+}
 
 /* Style for the image container to center the image */
 .image-container {
@@ -66,14 +69,20 @@ footer {
 
 /* ========= Accordion (tied to java.js) ======== */
 
-
 /* Container to hold both image and accordion side by side */
 .container {
   display: flex;            /* Flexbox layout to avoid overlap */
   justify-content: center;  /* Centers the content horizontally */
   align-items: flex-start;  /* Aligns items at the top */
-  gap: 20px;                /* Space between the image and accordion */
-  padding: 20px;            /* Optional padding around the container */
+  gap: 80px;                /* Space between the image and accordion */
+  padding: 80px;            /* Optional padding around the container */
+}
+
+/* Ensure that the accordion is stacked vertically */
+.accordion-container {
+  display: flex;             /* Ensure Flexbox layout */
+  flex-direction: column;    /* Stack accordion buttons vertically */
+  width: 100%;               /* Ensure the accordion takes up the full width */
 }
 
 /* Style the buttons that are used to open and close the accordion panel */
@@ -97,7 +106,7 @@ footer {
   
   /* Style the accordion panel. Note: hidden by default */
   .panel {
-    padding: 0 18px;
+    padding: 18px;
     background-color: white;
     display: none;
     overflow: hidden;
